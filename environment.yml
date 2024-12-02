@@ -1,0 +1,10 @@
+name: my-docs-env
+channels:
+  - conda-forge
+  - ncar-vapor
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - vapor
