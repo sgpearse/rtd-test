@@ -5,9 +5,9 @@ build:
   tools:
     python: "mambaforge-22.9"
 
-  commands:
-    - echo "print(\"hi\")" > ./test.py
-    - python ./test.py
+#  commands:
+#    - echo "print(\"hi\")" > ./test.py
+#    - python ./test.py
 
 python:
   install:
