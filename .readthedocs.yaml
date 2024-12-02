@@ -5,6 +5,7 @@ build:
   tools:
     python: "3.9"
     conda: "latest"
+
   commands:
     - echo "from vapor import animation" > test.py
     - python test.py
