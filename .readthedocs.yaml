@@ -7,9 +7,12 @@ build:
   jobs:
     post_build:
     - conda env export --from-history
-    - echo "print(\"hi\")" > ./test.py
-    - echo "from vapor import animation" > ./test.py
-    - python ./test.py
+    - python
+    - print(\"hi\")
+    - from vapor import animation
+    #- echo "print(\"hi\")" > ./test.py
+    #- echo "from vapor import animation" > ./test.py
+    #- python ./test.py
 
 #python:
 #  install:
