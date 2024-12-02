@@ -6,8 +6,8 @@ build:
     python: "mambaforge-22.9"
 
   commands:
-    - echo "from vapor import animation" > test.py
-    - python test.py
+    - echo "print(\"hi\")" > ./test.py
+    - python ./test.py
 
 python:
   install:
