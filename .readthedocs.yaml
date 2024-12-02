@@ -3,22 +3,9 @@ version: "2"
 build:
   os: "ubuntu-20.04"
   tools:
-    python: "3.9"
+    python: "mambaforge-22.9"
 
   commands:
-    # Install Miniconda
-    - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-    - bash miniconda.sh -b -p $HOME/miniconda
-    - export PATH="$HOME/miniconda/bin:$PATH"
-    - conda init bash
-    - source ~/.bashrc
-    - conda config --set always_yes yes --set changeps1 no
-    - conda install -c conda-forge conda  # Update Conda to the latest version
-
-    # Set up the Conda environment
-    - conda env create -f environment.yml
-    - conda activate my-docs-env
-
     - echo "from vapor import animation" > test.py
     - python test.py
 
