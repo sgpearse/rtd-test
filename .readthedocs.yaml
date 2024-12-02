@@ -6,6 +6,7 @@ build:
     python: "mambaforge-22.9"
   jobs:
     post_build:
+    - conda env export --from-history
     - echo "print(\"hi\")" > ./test.py
     - echo "from vapor import animation" > ./test.py
     - python ./test.py
