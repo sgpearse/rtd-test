@@ -1,9 +1,10 @@
 version: "2"
 
+conda:
+  environment: environment.yml
+
 build:
-  os: "ubuntu-20.04"
-  tools:
-    python: "mambaforge-22.9"
+  image: latest
   jobs:
     post_build:
     - conda env export --from-history
@@ -15,11 +16,10 @@ build:
     #- python ./test.py
 
 python:
+  version: 3.9
   install:
-    - requirements: docs/requirements.txt
+    - method: pip
+      path: .
 
-sphinx:
-  configuration: docs/source/conf.py
-
-conda:
-  environment: environment.yml
+submodules:
+    include: all
