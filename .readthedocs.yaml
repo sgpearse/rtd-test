@@ -8,14 +8,15 @@ build:
     post_build:
     - conda env export --from-history
     - python -c "print(\"hi\")"
+    - python -c "import matplotlib"
     - python -c "from vapor import animation"
     #- echo "print(\"hi\")" > ./test.py
     #- echo "from vapor import animation" > ./test.py
     #- python ./test.py
 
-#python:
-#  install:
-#    - requirements: docs/requirements.txt
+python:
+  install:
+    - requirements: docs/requirements.txt
 
 sphinx:
   configuration: docs/source/conf.py
