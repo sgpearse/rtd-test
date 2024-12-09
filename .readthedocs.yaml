@@ -14,9 +14,9 @@ build:
     #- echo "from vapor import animation" > ./test.py
     #- python ./test.py
 
-python:
-  install:
-    - requirements: docs/requirements.txt
+#python:
+#  install:
+#    - requirements: docs/requirements.txt
 
 sphinx:
   configuration: docs/source/conf.py
