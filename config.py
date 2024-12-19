@@ -29,6 +29,7 @@ modulePaths = [Path(__file__).parent]
 condaPaths = [os.getenv('CONDA_PREFIX', "/")]
 
 def PathExists(path):
+    print("tes " + path)
     try:
         print("god " + path)
         return path.exists()
