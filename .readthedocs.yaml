@@ -8,7 +8,6 @@ build:
     python: "mambaforge-22.9"
   jobs:
     post_build:
-    - conda activate my-docs-env
     - conda env export --from-history
     - python -c "print(\"hi\")"
     - python -c "help(\"modules\")"
