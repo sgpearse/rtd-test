@@ -34,9 +34,10 @@ def PathExists(path):
     except PermissionError:
         return False
 
-roots = sourcePaths + installPaths + modulePaths + condaPaths
+roots = sourcePaths + installPaths + modulePaths + condaPaths + "/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest"
 allRoots = roots.copy()
 roots = map(Path, roots)
+print("Resource Roots:\n\t" + "\n\t".join(map(str, roots)))
 roots = filter(PathExists, roots)
 roots = [*roots]
 
