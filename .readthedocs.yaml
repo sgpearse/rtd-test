@@ -11,6 +11,7 @@ build:
     - python -c "help(\"modules\")"
     - python -c "import matplotlib"
     - printenv
+    - ls $CONDA_ENVS_PATH
     - python -c "from vapor import animation"
     #- echo "print(\"hi\")" > ./test.py
     #- echo "from vapor import animation" > ./test.py
