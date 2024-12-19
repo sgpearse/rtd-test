@@ -29,12 +29,9 @@ modulePaths = [Path(__file__).parent]
 condaPaths = [os.getenv('CONDA_PREFIX', "/")]
 
 def PathExists(path):
-    print("tes " + path)
     try:
-        print("god " + path)
         return path.exists()
     except PermissionError:
-        print("bad " + path)
         return False
 
 #roots = sourcePaths + installPaths + modulePaths + condaPaths + [Path('/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest')]
