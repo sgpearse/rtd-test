@@ -1,5 +1,7 @@
 version: "2"
 
+  #apt_packages:
+  #  - 
 build:
   os: "ubuntu-20.04"
   tools:
@@ -12,6 +14,9 @@ build:
     - python -c "import matplotlib"
     - printenv
     - conda list
+    - conda env list
+    - gcc --version
+    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
     - python -c "from vapor import animation"
     #- echo "print(\"hi\")" > ./test.py
     #- echo "from vapor import animation" > ./test.py
