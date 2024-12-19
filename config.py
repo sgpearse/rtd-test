@@ -40,7 +40,7 @@ roots = map(Path, roots)
 roots = filter(PathExists, roots)
 roots = [*roots]
 
-# print("Resource Roots:\n\t" + "\n\t".join(map(str, roots)))
+print("Resource Roots:\n\t" + "\n\t".join(map(str, roots)))
 
 if not roots:
     print("Error: Could not find any valid resource paths from", allRoots)
