@@ -34,7 +34,7 @@ def PathExists(path):
     except PermissionError:
         return False
 
-roots = sourcePaths + installPaths + modulePaths + condaPaths + [PosixPath('/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest')]
+roots = sourcePaths + installPaths + modulePaths + condaPaths + [Path('/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest')]
 allRoots = roots.copy()
 roots = map(Path, roots)
 print("Resource Roots:\n\t" + "\n\t".join(map(str, roots)))
