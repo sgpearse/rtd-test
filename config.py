@@ -21,6 +21,7 @@ sourcePaths = [
 installPaths = [
     site.USER_BASE,
     sys.prefix,
+    '/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor',
     '/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest',
 ]
 installPaths = [Path(p)/'vapor' for p in installPaths]
