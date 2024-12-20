@@ -21,6 +21,7 @@ build:
     - cp $READTHEDOCS_REPOSITORY_PATH/config.py $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages/vapor
     - ls $CONDA_ENVS_PATH/latest/include
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
+    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib
     - python -c "from vapor import animation"
     #- echo "print(\"hi\")" > ./test.py
     #- echo "from vapor import animation" > ./test.py

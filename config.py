@@ -55,7 +55,7 @@ def GetAllResources(relPath):
     """For source builds where there can be, for example, multiple lib dirs"""
     ret = []
     for root in roots:
-        #print("    def GetAllResources(relPath): " + str(root) + " " + relPath)
+        print("    def GetAllResources(relPath): " + str(root) + " " + relPath)
         if (root / relPath).exists():
             ret.append(str(root / relPath))
     if ret:
