@@ -23,10 +23,10 @@ build:
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor
-    - ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work
-    - ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/lib/osgl
-    - ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/lib/osgl/glad
-    - ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/build
+    #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work
+    #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/lib/osgl
+    #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/lib/osgl/glad
+    #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/build
     #- python -c "/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor include
     #- ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor/include
     - python -c "from vapor import animation"
