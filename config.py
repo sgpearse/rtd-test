@@ -28,10 +28,16 @@ installPaths = [
     '/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest',
 ]
 installPaths = [Path(p)/'vapor' for p in installPaths]
+for p in installPaths:
+    print("install " + str(p))
 
 modulePaths = [Path(__file__).parent]
+for p in modulePaths:
+    print("mod " + str(p))
 
 condaPaths = [os.getenv('CONDA_PREFIX', "/")]
+for p in condaPaths:
+    print("con " + str(p))
 
 def PathExists(path):
     try:
