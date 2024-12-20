@@ -18,7 +18,7 @@ build:
     - gcc --version
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
     - ls $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages
-    #- cp $READTHEDOCS_REPOSITORY_PATH/config.py $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages/vapor
+    - cp $READTHEDOCS_REPOSITORY_PATH/config.py $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages/vapor
     - ls $CONDA_ENVS_PATH/latest/include
     - python -c "from vapor import animation"
     #- echo "print(\"hi\")" > ./test.py
