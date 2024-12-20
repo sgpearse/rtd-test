@@ -21,11 +21,13 @@ for p in sourcePaths:
 # Conda installs files using setup(data_files) in a different location than pip.
 # Conda installs them in the module root like package_data
 
+#install /home/docs/.local/vapor
+#install /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/vapor
+#install /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor/vapor
+#install /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/vapor
 installPaths = [
     site.USER_BASE,
     sys.prefix,
-    '/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor',
-    '/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest',
 ]
 installPaths = [Path(p)/'vapor' for p in installPaths]
 for p in installPaths:
@@ -35,7 +37,7 @@ modulePaths = [Path(__file__).parent]
 for p in modulePaths:
     print("mod " + str(p))
 
-condaPaths = [os.getenv('CONDA_PREFIX', "/")]
+condaPaths = [os.getenv('CONDA_PREFIX', "/"), r'/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest']
 for p in condaPaths:
     print("con " + str(p))
 
