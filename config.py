@@ -57,6 +57,7 @@ def GetAllResources(relPath):
     ret = []
     for root in roots:
         print("    def GetAllResources(relPath): " + str(root) + " " + relPath + " " + str(((root / relPath).exists())))
+        print(type(root))
         if (root / relPath).exists():
             ret.append(str(root / relPath))
     if ret:
