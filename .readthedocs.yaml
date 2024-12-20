@@ -23,7 +23,7 @@ build:
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib
     - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor
-    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor/include
+    #- ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor/include
     - python -c "from vapor import animation"
     #- echo "print(\"hi\")" > ./test.py
     #- echo "from vapor import animation" > ./test.py
