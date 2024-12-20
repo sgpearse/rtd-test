@@ -21,6 +21,7 @@ sourcePaths = [
 installPaths = [
     site.USER_BASE,
     sys.prefix,
+    '/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest',
 ]
 installPaths = [Path(p)/'vapor' for p in installPaths]
 
@@ -39,11 +40,11 @@ print(type(sourcePaths))
 roots = sourcePaths + installPaths + modulePaths + condaPaths
 allRoots = roots.copy()
 roots = map(Path, roots)
-roots2=roots
+roots2=list(roots)
 print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
 roots = filter(PathExists, roots)
 roots = [*roots]
-roots2=roots
+roots2=list(roots)
 print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
 
 if not roots:
