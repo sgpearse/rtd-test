@@ -12,6 +12,9 @@ sourcePaths = [
     cmake.THIRD_PARTY_DIR,
 ]
 
+for p in sourcePaths:
+    print("source " + str(p))
+
 # Files installed using setup(data_files) are placed in one of the following two locations:
 #   sys.prefix for system installations
 #   site.USER_BASE for user installations
