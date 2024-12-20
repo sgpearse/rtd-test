@@ -41,11 +41,11 @@ roots = sourcePaths + installPaths + modulePaths + condaPaths
 allRoots = roots.copy()
 roots = map(Path, roots)
 roots2=list(roots)
-print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
+#print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
 roots = filter(PathExists, roots)
 roots = [*roots]
 roots2=list(roots)
-print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
+#print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
 
 if not roots:
     print("Error: Could not find any valid resource paths from", allRoots)
