@@ -36,15 +36,14 @@ def PathExists(path):
         return False
 
 #roots = sourcePaths + installPaths + modulePaths + condaPaths + [Path('/home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest')]
-print(type(sourcePaths))
+#print(type(sourcePaths))
 roots = sourcePaths + installPaths + modulePaths + condaPaths
 allRoots = roots.copy()
 roots = map(Path, roots)
-roots2=list(roots)
-#print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
 roots = filter(PathExists, roots)
 roots = [*roots]
-roots2=list(roots)
+
+#roots2=list(roots)
 #print("Resource Roots:\n\t" + "\n\t".join(map(str, roots2)))
 
 if not roots:
