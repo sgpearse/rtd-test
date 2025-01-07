@@ -9,20 +9,20 @@ build:
   jobs:
     post_build:
     - conda env export --from-history
-    - python -c "print(\"hi?\")"
-    - python -c "help(\"modules\")"
-    - python -c "import matplotlib"
+    #- python -c "print(\"hi?\")"
+    #- python -c "help(\"modules\")"
+    #- python -c "import matplotlib"
     - printenv
-    - conda list
-    - conda env list
-    - gcc --version
-    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
-    - ls $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages
+    #- conda list
+    #- conda env list
+    #- gcc --version
+    #- ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
+    #- ls $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages
     - cp $READTHEDOCS_REPOSITORY_PATH/config.py $CONDA_ENVS_PATH/latest/lib/python3.9/site-packages/vapor
-    - ls $CONDA_ENVS_PATH/latest/include
-    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
-    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib
-    - ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor
+    #- ls $CONDA_ENVS_PATH/latest/include
+    #- ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest
+    #- ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib
+    #- ls /home/docs/checkouts/readthedocs.org/user_builds/rtd-test2025/conda/latest/lib/python3.9/site-packages/vapor
     #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work
     #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/lib/osgl
     #- ls /opt/micromamba/envs/build/conda-bld/vapor_1724092900864/work/lib/osgl/glad
