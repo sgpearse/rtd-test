@@ -8,11 +8,11 @@ build:
     python: "mambaforge-22.9"
   jobs:
     post_build:
-    - conda env export --from-history
+    #- conda env export --from-history
     #- python -c "print(\"hi?\")"
     #- python -c "help(\"modules\")"
     #- python -c "import matplotlib"
-    - printenv
+    #- printenv
     #- conda list
     #- conda env list
     #- gcc --version
